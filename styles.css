@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --primary: darkslategrey;
+  --secondary: #919191;
+  --whitecol: white;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-white {
+  color: var(--whitecol) !important;
+}
+
+.container {
+  display: flex;
+  /* justify-content: start; */
+  gap: 1%;
+  width: 100%; /* Adjust width as needed */
+  margin: 0 0; /* Center the container */
+  min-height: 100%;
+}
+
+.column1 {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--primary);
+  color: var(--whitecol);
+  padding: 10px;
+}
+
+.column1 h3 {
+  margin-left: 30px;
+}
+
+.column2 {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  gap: 5%;
+  flex-wrap: wrap;
+  width: fit-content;
+}
+
+.box {
+  /* width: 100px; /* Adjust width as needed */
+  /* height: 50px; Adjust height as needed */
+  /* background-color: lightblue; */
+  /* margin-bottom: 10px; Adjust spacing between rows */
+}
+
+.space_between_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+hr {
+  width: 100%;
+  position: relative;
+  bottom: 5%;
+  /* right: 5%; */
+  /* padding-left: 10%; */
+  /* margin: 20 30; */
+}
+
+.profile_img {
+  border-radius: 50%;
+}
+
+.profile_img_container {
+  display: flex;
+  justify-content: center;
+}
+
+.name,
+.title {
+  color: var(--primary);
+}
+
+.title {
+  font-family: "Nunito";
+}
+.name {
+  font-family: "Merriweather";
+}
+
+.li-style-none {
+  list-style: none;
+  margin: 0;
+  li {
+    padding-top: 10px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li:first-child {
+    padding-top: initial;
+  }
+}
+
+.styled-list {
+  list-style-image: repeating-linear-gradient(
+    to right top,
+    var(--secondary),
+    var(--primary)
+  );
+
+  margin: 0;
+
+  li {
+    padding-top: 20px;
+  }
+  li:first-child {
+    padding-top: initial;
+  }
+}
+
+.new_evnt_btn {
+  background-color: var(--primary);
+  color: var(--whitecol);
+  padding: 10px;
+  cursor: pointer;
+}
