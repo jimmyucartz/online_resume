@@ -67,3 +67,50 @@ body {
   text-align: center;
   margin-top: 20px;
 }
+
+.countdown {
+  display: flex;
+  gap: 2%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.event-date {
+  text-align: center;
+  font-size: x-large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: oblique;
+  /* font-sha */
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-color: white;
+  color: black;
+  width: 5dvw;
+  height: 5dvw;
+  /* border-radius: 20%; */
+  width: 10dvw;
+}
+
+.top {
+  background-color: rgb(0 79 79);
+  color: white;
+  flex: 1 0 auto;
+  width: 100%;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+}
+
+.bottom {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+}
